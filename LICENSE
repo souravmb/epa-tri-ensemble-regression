@@ -1,6 +1,9 @@
 MIT License
 
-Copyright (c) 2026 SOURAV M B
+Copyright (c) 2025 Sourav M B & Sruti S Kumar
+Amrita Vishwa Vidyapeetham, Coimbatore
+Department of Mathematics
+M.Sc Applied Statistics & Data Analytics
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +22,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+Note on Dataset:
+The EPA Toxics Release Inventory (TRI) data used in this project is publicly
+available through the United States Environmental Protection Agency (EPA) and
+is not subject to copyright restrictions. It is freely available at:
+https://www.epa.gov/toxics-release-inventory-tri-program/tri-basic-data-files-calendar-years-1987-present
+
+Users of this software are responsible for ensuring compliance with the EPA's
+data usage terms and any applicable regulations.
