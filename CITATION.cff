@@ -1,0 +1,72 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software or methodology in your research,
+  please cite it using the metadata below.
+
+title: >-
+  Stratified Differential Evolution Ensemble Regression with
+  Leak-Guarded Bayesian Optimization for Regulatory-Grade
+  Prediction of Industrial Toxic Chemical Releases: A
+  SHAP-Interpreted Analysis of EPA Toxics Release Inventory 2022
+
+authors:
+  - family-names: "M B"
+    given-names: "Sourav"
+    orcid: "https://orcid.org/0009-0006-8642-3339"
+    affiliation: >-
+      Department of Mathematics, Amrita Vishwa Vidyapeetham,
+      Coimbatore, India
+    email: cb.ps.p2asd25023@cb.students.amrita.edu
+
+  - family-names: "S Kumar"
+    given-names: "Sruti"
+    affiliation: >-
+      Department of Mathematics, Amrita Vishwa Vidyapeetham,
+      Coimbatore, India
+    email: cb.ps.p2asd25025@cb.students.amrita.edu
+
+repository-code: "https://github.com/souravmb/epa-tri-ensemble-regression"
+
+type: software
+
+version: "1.0.0"
+
+date-released: "2026-01-01"
+
+license: MIT
+
+abstract: >-
+  A rigorously leak-guarded machine learning pipeline for
+  predicting total toxic chemical releases (in pounds) using
+  the EPA Toxics Release Inventory 2022 dataset (80,040
+  facility-chemical records, 122 variables). Implements five
+  regression models, Bayesian hyperparameter optimisation via
+  Optuna TPE, and a two-level stacking ensemble combining
+  Differential Evolution-optimised weighted blending with a
+  Linear Regression meta-learner. Final ensemble achieves
+  RMSE = 0.2341 and R² = 0.9966 on the log-transformed target.
+  SHAP TreeExplainer analysis provides model interpretability.
+  Built as a Marimo reactive notebook for full reproducibility.
+
+keywords:
+  - EPA TRI
+  - Toxics Release Inventory
+  - ensemble learning
+  - gradient boosting
+  - XGBoost
+  - differential evolution
+  - Bayesian optimisation
+  - Optuna
+  - SHAP
+  - data leakage prevention
+  - environmental data science
+  - Marimo
+  - machine learning
+  - regulatory prediction
+
+references:
+  - type: dataset
+    title: "EPA TRI Basic Data Files — Calendar Years 1987–Present"
+    url: "https://www.epa.gov/toxics-release-inventory-tri-program/tri-basic-data-files-calendar-years-1987-present"
+    authors:
+      - name: "U.S. Environmental Protection Agency"
