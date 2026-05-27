@@ -54,6 +54,7 @@ SHAP TreeExplainer analysis confirms that on-site and off-site waste-management 
 - [Running the Notebook](#running-the-notebook)
 - [Key Design Decisions](#key-design-decisions)
 - [Limitations and Future Work](#limitations-and-future-work)
+- [Contributing](#contributing)
 - [Citation](#citation)
 - [License](#license)
 
@@ -284,20 +285,29 @@ Raw EPA TRI 2022 CSV  (80,040 records x 122 columns)
 ```
 epa-tri-ensemble-regression/
 |
-├── EPATRIML_1_.py       Marimo reactive notebook (primary — run this)
-├── EPATRIML-2.ipynb     Jupyter/IPython export
-├── SOURAV_ML.pdf        Full research paper (IEEE-style)
+├── EPATRIML_1_.py         Marimo reactive notebook (primary — run this)
+├── EPATRIML-2.ipynb       Jupyter/IPython export
+├── SOURAV_ML.pdf          Full research paper (IEEE-style)
 |
 ├── data/
 |   └── raw/
-|       └── .gitkeep     Place 2022_us.csv here (not tracked by git)
+|       └── .gitkeep       Place 2022_us.csv here (not tracked by git)
 |
-├── environment.yml      Conda environment (Python 3.11, tri-ml)
-├── requirements.txt     pip requirements
-├── CITATION.cff         Machine-readable citation metadata
-├── CONTRIBUTING.md      Contribution guidelines
-├── LICENSE              MIT License
-└── README.md            This file
+├── .github/
+|   ├── ISSUE_TEMPLATE/
+|   |   ├── bug_report.md           Bug report form with pipeline-stage checklist
+|   |   ├── methodology_proposal.md Proposal form tied to paper's limitations
+|   |   └── config.yml              Disables blank issues, redirects to Discussions
+|   └── PULL_REQUEST_TEMPLATE.md    PR form with 7-point leakage audit checklist
+|
+├── environment.yml        Conda environment (Python 3.11, tri-ml)
+├── requirements.txt       pip requirements
+├── CITATION.cff           Machine-readable citation metadata
+├── CODE_OF_CONDUCT.md     Project conduct standards
+├── CONTRIBUTING.md        Contribution guidelines
+├── SECURITY.md            Vulnerability reporting and data handling policy
+├── LICENSE                MIT License
+└── README.md              This file
 ```
 
 ---
@@ -419,17 +429,36 @@ A feature can have high non-linear predictive power (high RF importance) but low
 
 ---
 
+## Contributing
+
+Contributions are welcome. Please read [`CONTRIBUTING.md`](CONTRIBUTING.md) for scope, the leakage-safety requirements that apply to all PRs, and the branch naming convention.
+
+**Maintainers:**
+
+| GitHub | Role |
+|---|---|
+| [@souravmb](https://github.com/souravmb) | Primary author |
+| [@Srutiskumar](https://github.com/Srutiskumar) | Co-author |
+
+**Issue templates** are available for [bug reports](.github/ISSUE_TEMPLATE/bug_report.md) and [methodology proposals](.github/ISSUE_TEMPLATE/methodology_proposal.md). All pull requests use the [PR template](.github/PULL_REQUEST_TEMPLATE.md), which includes a mandatory leakage audit checklist.
+
+General questions about the methodology or dataset belong in [Discussions](https://github.com/souravmb/epa-tri-ensemble-regression/discussions) rather than Issues.
+
+This project follows the standards described in [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md). To report a security concern or a subtle data leakage path, see [`SECURITY.md`](SECURITY.md).
+
+---
+
 ## Citation
 
 If you use this codebase, methodology, or results in your research, please cite:
 
 ```bibtex
-@misc{sourav2025tri,
+@misc{sourav2026tri,
   author       = {Sourav, M B and Kumar, Sruti S},
   title        = {Stratified Differential Evolution Ensemble Regression with
                   Leak-Guarded Bayesian Optimization for Regulatory-Grade
                   Prediction of Industrial Toxic Chemical Releases},
-  year         = {2025},
+  year         = {2026},
   institution  = {Amrita Vishwa Vidyapeetham, Coimbatore},
   note         = {M.Sc Applied Statistics and Data Analytics,
                   Department of Mathematics},
@@ -445,7 +474,7 @@ Machine-readable citation metadata is also available in [`CITATION.cff`](CITATIO
 
 Released under the **MIT License** — see [`LICENSE`](LICENSE) for full terms.
 
-Copyright 2025 Sourav M B and Sruti S Kumar, Amrita Vishwa Vidyapeetham
+Copyright 2026 Sourav M B and Sruti S Kumar, Amrita Vishwa Vidyapeetham
 
 ---
 
